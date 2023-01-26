@@ -1,23 +1,30 @@
-*{
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-                           /* Common CSS Property */
-h2{
+
+/* Common CSS Property */
+h2 {
     padding: 33px;
     font-weight: 24px;
     color: #562EFF;
     margin-bottom: 30px;
 }
 
-hr{
-    margin: 30px;
-    color: #D1D1D1;
+hr {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #D1D1D1;
 }
-                            /* Common CSS Property Done */
- 
-                            /* header start */
-header{
+
+/* Common CSS Property Done */
+
+/* header start */
+header {
     background-color: #562EFF;
     height: 94px;
     display: flex;
@@ -25,74 +32,79 @@ header{
     align-items: center;
 }
 
-.intro{
+.intro {
     display: flex;
     align-items: center;
     gap: 15px;
     color: white;
 }
 
-.intro img{
+.intro img {
     height: 51px;
     width: 40.42px;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
 }
 
-.links a{
+.links a {
     margin-right: 36px;
     text-decoration: none;
     color: white;
 }
-                            /* Header end */
 
-                            /* Main Start */
-main{
-    background-color: #E5E5E5;
+/* Header end */
+
+/* Main Start */
+main {
+    background: #F3F1FF;
     padding-top: 36px;
+    padding-bottom: 20px;
 
 }
 
-                            /* Main End */
+/* Main End */
 
-                            /* Top Side Start */
+/* Top Side Start */
 
-.top-side{
-   width: 870px;
-   height: 850px;
-   margin: 0 auto;
-   background-color: white;
-   border-radius: 5px;
+.top-side {
+    width: 870px;
+    height: 730px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 30px;
 }
 
-.top-players{
+.top-players {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
 }
 
-.player{
+.player {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.top-players img{
+
+.top-players img {
     height: 56px;
     width: 56px;
     padding-left: 30px;
-    
+
 }
 
-.blogs{
+.blogs {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
+    margin-top: -20px;
 }
 
-.blog{
+.blog {
     padding-left: 30px;
     display: flex;
     gap: 16px;
@@ -100,18 +112,99 @@ main{
     align-items: center;
 }
 
-.blog img{
+.blog img {
     width: 177px;
     height: 117px;
 }
 
-.blog .content{
+.blog .content {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-span{
+span {
     color: #562EFF;
 }
-                            /* Top Side End */
+
+/* Top Side End */
+
+/* Latest Course Start */
+.latest-course {
+    width: 870px;
+    height: 440px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.course-containers {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+}
+
+.course{
+    margin-top: -50px;
+    box-shadow: #AEAEAE;
+    border-radius: 10px;
+    width: 255px;
+    height: 270px;
+    box-shadow:(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    padding: 10px;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    font-size: 16px;
+}
+
+.course-info p {
+    color: #ED6B4F;
+    margin-top: 7px;
+    margin-bottom: 16px;
+}
+
+.course-details {
+    display: flex;
+    gap: 15px;
+    font-size: 14.6913px;
+    align-items: center;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+.duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    width: 94.83px;
+    height: 29.38px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Latest Course End  */
+
+/* Footer start */
+footer{
+    margin-top: -25px;
+    /* background-color: black; */
+    background-color: #F3F1FF;
+    color: #1E1E1E;
+    text-align: center;
+    padding-top: 30px;
+}
+/* Footer end */
